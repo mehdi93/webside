@@ -1,0 +1,474 @@
+/* Estilos generales*/
+ @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #3f3f3f;
+    font-size: 20px;
+    line-height: 1.5em;
+
+}
+p{
+    line-height: 1.5em;
+    padding: 20px 10px;
+
+}
+a{
+    text-decoration: none;
+    color: #282828;
+}
+a:hover{
+    color:burlywood; /*Colores corporativo*/
+}
+a.activo{
+    color: burlywood;
+}
+img{
+    max-width: 100%;
+}
+.boton{
+    margin: 20px;
+    color: white;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: darkgreen
+}
+.naranja{background-color: rgb(232,72,35); }
+.azul{ background-color: rgb(0,110 ,180 );}
+.amarillo{background-color: rgb(237,165,51);}
+
+.naranja:hover{
+    background-color: rgb(146, 43, 19);color:white;
+}
+.azul:hover{
+    background-color: rgb(12, 88, 136);color:white;
+}
+.amarillo:hover{
+    background-color: rgb(172, 121, 39);color:white;
+}
+
+@keyframes intermitente{
+    0% {opacity:0;}
+    50%{opacity:1;}
+    100%{opacity:0;}
+}
+.fila{
+  
+    margin:40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.primera{
+    margin-top: 100px;
+}
+ .fondo{
+     margin:0;
+     padding:60px 40px;
+     background-image: url('../img/fischer-2739115_1920 (1).jpg');
+     background-position: center;
+     background-size: cover;
+     /* background-attachment: fixed; Efecto parallax */
+ }
+
+.col1{
+    /* padding: 10px; */
+    flex-basis: 300px;
+    flex-grow: 1;
+}
+.col2{
+    /* border:solid 1px grey; */
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 2;
+}
+.col3{
+    /* border:solid 1px grey; */
+    padding: 10px;
+    flex-basis: 300px;
+    flex-grow: 3;
+}
+.centrado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.columna{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.pie{
+    display: flex;
+    align-items: flex-end;
+}
+.eslogan{
+    font-size: 30px;
+    padding: 0%;
+}
+.separador{
+    display: none;
+  border: solid 1px #006782;
+  width: 60%;
+}
+
+/*Cabecera barra de navegación*/
+header{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow:  0px 4px 4px grey;
+}
+header.blanco{
+    box-shadow: initial;
+}
+.burger{
+    font-size: 34px;
+    display: none;
+}
+.blanco .burger{
+    color: white;
+}
+.blanco .burger:hover{
+    color: burlywood;
+}
+.logo{
+    color: burlywood;
+    font-size: 50px;
+     
+}
+
+.blanco .logo{
+    color: white;
+}
+.blanco .logo:hover{
+    color: burlywood;
+}
+blanco nav ul{
+    list-style: none;
+    display: flex;
+   
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+header nav ul li {
+  padding: 0 15px;
+   
+}
+.blanco nav ul li a{
+    color: white;
+}
+.blanco nav ul li a:hover{
+    color: burlywood;
+}
+.blanco nav ul li a.activo{
+    color: burlywood;
+}
+
+/*hero*/
+
+.hero{
+    height: 100vh;
+    background-image: url('../img/PCs.jpg');
+    background-position: center;
+    background-size: cover;
+    /* background-attachment: fixed; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+} 
+
+.hero h1{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    
+}
+.hero h2{
+    color: rgb(0, 0, 0);
+    margin-bottom:60px;
+  
+}
+.hero a{
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    margin-bottom: 60px;
+    animation-name: intermitente;
+    animation-duration: 1500ms;
+    animation-iteration-count: infinite;
+}
+/* Formulario newsletter*/
+.miniform{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.miniform p{
+    color: black;
+    font-size: 28px;
+}
+.miniform input{
+    border: 2px solid blue;
+    color: blue;;
+    font-size:24px;
+    padding: 10px;
+}
+input:focus{
+    outline: none;
+}
+
+.miniform .boton{  
+    border: 2px solid blue;
+    background-color: blue;
+    color:white;
+        font-size: 24px;
+        padding: 10px
+      
+}
+/*Footer*/
+footer{
+    /* Alla credits to Lea Verou*/
+    background: 
+radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.15) 30%, rgba(255,255,255,.3) 32%, rgba(255,255,255,0) 33%) 0 0,
+radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.3) 13%, rgba(255,255,255,0) 14%) 0 0,
+radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 17%, rgba(255,255,255,.43) 19%, rgba(255,255,255,0) 20%) 0 110px,
+radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) -130px -170px,
+radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.2) 11%, rgba(255,255,255,.4) 13%, rgba(255,255,255,0) 14%) 130px 370px,
+radial-gradient(rgba(255,255,255,0) 0, rgba(255,255,255,.1) 11%, rgba(255,255,255,.2) 13%, rgba(255,255,255,0) 14%) 0 0,
+linear-gradient(45deg, #343702 0%, #184500 20%, #187546 30%, #006782 40%, #0b1284 50%, #760ea1 60%, #83096e 70%, #840b2a 80%, #b13e12 90%, #e27412 100%);
+background-size: 470px 470px, 970px 970px, 410px 410px, 610px 610px, 530px 530px, 730px 730px, 100% 100%;
+background-color: #840b2a;
+    color: rgb(255, 255, 255);
+    display: flex;
+     justify-content: space-between; 
+    flex-wrap: wrap;  
+    position: relative;
+     
+}
+.top{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    background-color:blue; 
+    color: white;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%); /*La mitad del ancho del elemento*/
+    font-size: 36px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+footer p{
+    font-size: 18px;
+    padding: 5px;
+    
+}
+.izdo{
+    padding: 15px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.centro{
+    padding: 15px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.centro a{
+    color:white;
+    font-size: 18px;
+    padding: 5px;
+}
+a.activo{
+    color: burlywood;
+}
+.centro a:hover{
+    color: burlywood;
+    
+}
+.centro a.activo{
+    color: burlywood;
+    
+}
+.dcho{
+    padding: 15px;
+    flex-basis: 300px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+.dcho a{
+    color: white;
+    font-size: 32px;
+    padding: 25px
+    
+   
+
+}
+.copy{
+    padding: 5px;
+    width: 100%
+}
+.copy p{
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Estilos para contactos */
+
+.direccion{
+    line-height: 2em;
+}
+.legales h1{
+    font-size: 26px;
+}
+.legales h1+h2{
+   padding-bottom: 10px;
+}
+.legales h2{
+    font-size: 18px;
+    padding: 10px;
+}
+.legales p, li {
+    font-size: 18px;
+    padding: 10px;
+}
+.legales{
+padding-left: 40px;
+}
+
+
+/* Media Queries*/
+@media (min-width:1280px){
+    .hero, .fondo{
+        background-attachment: fixed;
+    } 
+}
+
+
+@media(max-width:720px){
+
+.fila{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+
+  
+.separador{
+        display: initial;
+        
+    }
+
+ .columna{
+        margin: 20px; }
+
+  .dcho{
+            justify-content: center;
+        }
+     
+}
+
+@media(max-width:640px){
+
+.burger{
+    display: initial;}
+
+nav {
+    display: none;}
+
+.hero{
+    background-attachment: scroll;
+}    
+
+.hero h1{
+    font-size: 36px;
+    text-align: center;
+    padding: 0 10px;}
+
+.hero h2{
+    font-size: 24px;
+    text-align: center;
+    padding: 0 10px;}
+
+.fondo{
+        padding: 0 20px 0 20px;
+    }
+
+.izdo, .center, .dcho{
+        flex-basis: 200px;
+    }
+
+.eslogan{
+    margin:30px;}
+
+.columna{
+        margin: 20px;}
+.miniform{
+            text-align: center;
+        }
+   }
+
+@media(max-width:420px){
+
+.fila{
+        margin: 20px 0 20px 0;
+        }
+
+.fila.primera{
+    margin: 100px 0 20px 0;
+}
+.miniform input{
+         font-size:20px;
+        padding: 10px;}
+         
+.miniform .boton{  
+         font-size: 20px;
+        padding: 10px;}
+.ultima{
+             margin:  20px 0 40px 0;
+         }       
+             
+.izdo{
+            margin-top: 20px;
+            display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+        
+        }
+       
+} 
+
+     
+      
+   
